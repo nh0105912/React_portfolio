@@ -64,3 +64,24 @@ It adapts smoothly to all screen sizes, including mobile and tablet devices.
 - Optimized for **mobile devices**  
 - Works perfectly on **tablets and desktops**  
 - Includes a **hamburger menu toggle** for small screens
+
+
+
+# Home / Hero section 
+i create the hero section .
+## Features:
+<p>personal info:  Name, role,image and short description.</p>
+<p>social media icon : github ,linkedin , facebook </p>
+<p>CAT buttons: download resume & coming soon</p>
+
+## Install library:
+1. React icons :  **npm i react-ions** 
+
+src/
+ ┣ components/
+ ┃ ┣ Home.jsx
+ ┃ ┗ About.jsx
+ ┣ assets/
+ ┃ ┗ images/
+ ┣ data.js
+ ┗ App.jsx

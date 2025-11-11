@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <>
-    <div  className=" lg:sticky top-0 z-50
+    <div  className=" md:sticky top-0 z-50
     shadow-[0_6px_8px_0_rgba(255,255,255,0.2)]
    
     px-4 py-2
@@ -74,7 +74,7 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <button className="capitalize bg-gradient-to-r from-cyan-500 to-blue-400 text-blue-200 hover:text-white font-semibold px-6 py-2 rounded-lg hover:from-blue-500 hover:to-cyan-400 transition duration-300 ms-0 md:ms-6 lg:ms-10 "  >
+           <button className="capitalize bg-gradient-to-r from-red-400 to-blue-400 text-white hover:text-white font-semibold px-6 py-2 rounded-lg hover:from-red-700 hover:to-cyan-500 transition duration-300 ms-0 md:ms-6 lg:ms-12 ">
               Coming soon
             </button>
           </li>
