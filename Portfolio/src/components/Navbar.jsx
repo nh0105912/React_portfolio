@@ -1,72 +1,80 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
-import logo from "../assets/images/logo.png"
 const Navbar = () => {
   const [open, setopen] = useState(false);
 
   return (
-    <div className="shadow-[0_6px_8px_0_rgba(255,255,255,0.3)]
-    bg-[linear-gradient(120deg,#0F0E0E,#313647)]
+    <>
+    <div  className=" lg:sticky top-0 z-50
+    shadow-[0_6px_8px_0_rgba(255,255,255,0.2)]
+   
     px-4 py-2
     w-[100%]
     mx-0
-    rounded-lg
-    my-3
+
+ 
     flex justify-between items-center gap-x-4
     relative
 
-   
     md:px-6
     md:w-[100%]
     md:mx-auto
-    md:rounded-full
+   
     md:text-1xl
-
  
-    lg:px-10
-    lg:w-[90%]
-    lg:mx-auto">
+    
+    lg:px-20
+
+   ">
       <div>
-        <img src={logo} alt="logo" className="w-10 h-10 rounded-3xl" />
+        {/* <img src={logo} alt="logo" className="w-12 h-12 rounded-3xl" /> */}
+        <h2 className="capitalize  py-2 
+        text-4xl font-bold bg-gradient-to-r from-red-500 to-blue-300 bg-clip-text text-transparent
+       ">Port<span className="text-cyan-400 cursor-pointer ">folio</span> </h2>
       </div>
 
       {/* Desktop & Mobile Menu */}
       <nav className="md:flex">
         <ul
-          className={`flex justify-center items-start  gap-y-6 md:gap-x-6 md:flex ${
+          className={`flex justify-center items-start md:items-center lg:items-center   gap-y-6 md:gap-x-6 md:flex ${
             open
               ? "flex flex-col absolute top-16 left-0 w-full bg-[#0F0E0E] p-4 rounded-lg md:static md:flex-row md:bg-transparent md:p-0"
               : "hidden md:flex"
           }`}
         >
           <li>
-            <a href="#" className="hover:text-cyan-400 transition duration-300 cursor-pointer hover:font-semibold">
+            <a href="#" className="text-cyan-400 transition duration-500 text-sm font-semibold 
+            relative  after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px]  hover:after:bg-cyan-400 after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-500 py-2 cursor-pointer ">
               Home
             </a>
           </li>
           <li>
-            <a href="#" className="hover:text-cyan-400 transition duration-300 cursor-pointer hover:font-semibold">
+            <a href="#" className="hover:text-cyan-400 transition duration-500 text-sm  font-semibold
+            relative  after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px]  hover:after:bg-cyan-400 after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-500 py-2 cursor-pointer ">
               About
             </a>
           </li>
           <li>
-            <a href="#" className="hover:text-cyan-400 transition duration-300 cursor-pointer hover:font-semibold">
+            <a href="#" className="hover:text-cyan-400 transition duration-500 font-semibold
+            relative  after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px]  hover:after:bg-cyan-400 after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-500 py-2 cursor-pointer ">
               Projects
             </a>
           </li>
           <li>
-            <a href="#" className="hover:text-cyan-400 transition duration-300 cursor-pointer hover:font-semibold">
+            <a href="#" className="hover:text-cyan-400 transition duration-500 text-sm font-semibold
+             relative  after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px]  hover:after:bg-cyan-400 after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-500 py-2 cursor-pointer ">
               Services
             </a>
           </li>
           <li>
-            <a href="#" className="hover:text-cyan-400 transition duration-300 cursor-pointer hover:font-semibold">
+            <a href="#" className="hover:text-cyan-400 transition duration-500 text-sm font-semibold
+            relative  after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px]  hover:after:bg-cyan-400 after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-500 py-2 cursor-pointer ">
               Contact us
             </a>
           </li>
           <li>
-            <button className="uppercase bg-gradient-to-r from-cyan-500 to-blue-400 text-white font-semibold px-6 py-2 rounded-full shadow-lg hover:from-blue-500 hover:to-cyan-400 transition duration-300">
+            <button className="capitalize bg-gradient-to-r from-cyan-500 to-blue-400 text-blue-200 hover:text-white font-semibold px-6 py-2 rounded-lg hover:from-blue-500 hover:to-cyan-400 transition duration-300 ms-0 md:ms-6 lg:ms-10 "  >
               Coming soon
             </button>
           </li>
@@ -80,6 +88,8 @@ const Navbar = () => {
         </button>
       </div>
     </div>
+   
+    </>
   );
 };
 
